@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        tools:context="com.example.pcworld.search_map.MapsActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/walk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Walk Mode" />
+
+    <Button
+        android:id="@+id/feb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/walk"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/walk"
+        android:text="Drive Mode" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/feb"
+        android:layout_marginBottom="14dp"
+        android:layout_marginStart="47dp"
+        android:layout_toEndOf="@+id/feb"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/map"
+        android:layout_alignStart="@+id/txt_time"
+        android:text="TextView" />
+</RelativeLayout>
